@@ -1,0 +1,144 @@
+<html><head><base href="https://darkyymod.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FREE MOD 🤝 - Trusted</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .content-wrapper {
+        background-color: rgba(30, 30, 30, 0.9);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        max-width: 400px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.5em;
+        text-shadow: 0 0 10px #00ff00;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    input {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #00ff00;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+        border-radius: 5px;
+    }
+    button:hover {
+        background-color: #00cc00;
+        transform: scale(1.05);
+    }
+    #result {
+        display: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .telegram-link {
+        color: #00ff00;
+        text-decoration: none;
+        font-size: 1.1em;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .contact-info {
+        font-size: 0.9em;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="content-wrapper" id="loginPage">
+        <h1>FREE MOD🤝</h1>
+        <div class="input-container">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div class="content-wrapper" id="hackPage" style="display:none;">
+        <h1>SURESHOTTT</h1>
+        <div class="input-container">
+            <input type="number" id="periodNo" placeholder="Period number" required>
+            <button onclick="predict()">Get Result</button>
+        </div>
+        <div id="result"></div>
+        <a href="https://t.me/+EfMN3qaTpwcxZDU1" class="telegram-link" target="_blank">JOIN US ON TELEGRAM</a>
+        <p class="contact-info">TELEGRAM CONTACT US (24/7)<br>@NOTIMEPASS4</p>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === '1' && password === '1') {
+                document.getElementById('loginPage').style.display = 'none';
+                document.getElementById('hackPage').style.display = 'block';
+            } else {
+                alert('Invalid credentials');
+            }
+        }
+
+        function predict() {
+            const periodNo = document.getElementById('periodNo').value;
+            if (!periodNo) {
+                alert('Please enter a period number');
+                return;
+            }
+
+            let result;
+            const lastDigit = periodNo % 10;
+
+            if ([0, 2, 4].includes(lastDigit)) {
+                result = "(0,2,4)SMALL,🔴";
+            } else if ([5, 7, 9].includes(lastDigit)) {
+                result = "(5,7,9)BIG🟢";
+            } else if ([1, 3].includes(lastDigit)) {
+                result = "(1,3)SMALL🟢";
+            } else if ([6, 8].includes(lastDigit)) {
+                result = "(6,8)BIG🔴";
+            }
+
+            document.getElementById('result').textContent = result;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
